@@ -15,13 +15,23 @@
   <body>
     <main class="mainsect">
       <section class="sect--left">
-        
+         <ul id="posts">
+             <h3 class="postsmessage">Posts go here!</h3>
+             <li id="individualpost">
+                 <h3 class="individualpost--username">@ Jason Momoa</h3>
+                 <div class="hr"></div>
+                <h3 class="individualpost--message">Drink your water!</h3>
+            </li>
+         </ul>
       </section>  
       <section class="sect--right">
-          <textarea>
-
-          </textarea>
-          <button>Tweet</button>
+          <h3 class="usernamequery">What's your username?</h3>
+          <input id="username">
+          <h3 class="positive">Send a positive message!</h3>
+          <div class="control">
+  <textarea class="textarea is-hovered" placeholder="Hovered textarea" id="message"></textarea>
+</div>
+          <button id="tweet">Tweet</button>
       </section>  
     </main>
   </body>

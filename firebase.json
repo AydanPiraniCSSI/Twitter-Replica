@@ -16,22 +16,5 @@
       }
     ]
   },
-<<<<<<< HEAD
   "emulators": {}
-=======
-  "emulators": {
-    "firestore": {
-      "port": 8080
-    },
-    "ui": {
-      "enabled": true
-    },
-    "database": {
-      "port": 9000
-    },
-    "hosting": {
-      "port": 5000
-    }
-  }
->>>>>>> 1f4f78da9a4ad16bc3af2d7902ec5b1a353ad925
 }
