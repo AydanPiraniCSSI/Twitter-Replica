@@ -15,8 +15,9 @@ main{
 }
 
 .sect--left{
-     width: 341px;
+     width: 478px;
     height: 80vh;
+    overflow: auto;
     border-radius: 4px;
     box-shadow: 0px 0px 3px grey
 }
@@ -78,4 +79,24 @@ button#tweet {
     border-radius: 7px;
     font-family: 'Poppins';
     cursor: pointer
+}
+
+h3.postsmessage {
+    margin-top: 30px;
+    padding-left: 19px;
+}
+
+h4.date {
+    font-size: 11px;
+    margin-left: 20px;
+    margin-top: 5px;
+     font-weight: 300;
+}
+
+ li{
+     list-style-type: none;
+ }
+
+ ul#posts {
+    padding-bottom: 25px;
 }
