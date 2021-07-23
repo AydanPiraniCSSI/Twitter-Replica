@@ -1,6 +1,6 @@
 
-
-const submitPost = () => {
+ const submitPost = () => {
+  
     const usernameRef = document.querySelector("#username");
     const messageRef = document.querySelector("#message");
 
@@ -26,6 +26,9 @@ const submitPost = () => {
     });
     console.log("Submitted post!");
 
+    
+    party.confetti(document.querySelector("main"))
+   
 };
 
 const getPosts = () => {
@@ -41,11 +44,11 @@ const getPosts = () => {
         }
     });
 
-
+    // setTimeout(getPosts(), 3000);
 }
 //  submitPost();
-getPosts();
-const generateCard = (username, message, date) => {
+setInterval(getPosts(), 3000);
+function generateCard(username, message, date) {
     return ` <li id="individualpost">
                  <h3 class="individualpost--username">@ ${username}</h3>
                  <h4 class="date">${date}</h4>
@@ -53,3 +56,6 @@ const generateCard = (username, message, date) => {
                 <h3 class="individualpost--message">${message}!</h3>
             </li>`
 }
+
+ 
+ 

@@ -28,7 +28,7 @@ main{
     margin-left: 17px;
     padding: 12px 21px;
     border-radius: 4px;
-    background: linear-gradient(45deg, #616161, #b8b8b8);
+    background: linear-gradient(45deg, #616161, #454545);
     color: white;
     box-shadow: 0px 0px 3px grey;
 }
@@ -59,6 +59,7 @@ input#username {
     border-radius: 7px;
     margin-top: 18px;
     width: 271px;
+    text-align: center;
 }
 
 .positive{
@@ -99,4 +100,10 @@ h4.date {
 
  ul#posts {
     padding-bottom: 25px;
+}
+
+h3.header {
+    font-size: 21px;
+    margin-bottom: 22px;
+    font-weight: 500;
 }
