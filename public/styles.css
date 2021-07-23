@@ -1,0 +1,9 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.sect--left{
+  border: solid 1px black
+}
+
