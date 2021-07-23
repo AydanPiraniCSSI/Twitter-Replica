@@ -7,11 +7,11 @@ body{
 
 main{
     display: flex;
-    justify-content: center;
-    column-gap: 300px;
+    justify-content: space-evenly;
+    /* column-gap: 192px; */
     width: 100vw;
+    align-items: center;
     margin-top: 70px;
-    
 }
 
 .sect--left{
