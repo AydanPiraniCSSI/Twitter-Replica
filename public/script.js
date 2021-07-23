@@ -1,7 +1,3 @@
-const getPosts = () => {
-    console.log("Getting posts!");
-}
-
 const submitPost = () => {
     // const usernameRef = document.querySelector("#username").value;
     // const messageRef = document.querySelector("message").value;
@@ -18,33 +14,23 @@ const submitPost = () => {
 
     // usernameRef.value = "";
     // messageRef.value = "";
-
     firebase.database().ref().push({
+        date: (1 + date.getMonth()) + "/" + date.getDate() + "/" + date.getFullYear(),
         username: username,
         message: message, 
         hashtags: hashtags, 
-        date: date
     });
     console.log("Submitted post!");
+};
+
+const getPosts = () => {
+    const messagesRef = firebase.database().ref();
+    console.log(firebase.database());
+    messagesRef.on('value', (snapshot) => {
+        const data = snapshot.val();
+        console.log(data);
+    });
 }
 
-
-// const submitMessage = () => {
-//     // const passcodeInput = document.querySelector('#tweet').value;
-//     // const messageInput = document.querySelector('#message').value;
-    
-//     firebase.database().ref().push({
-//         passcode: 'Hello',
-//         message: 'hi'
-//     });
-// };
-
-// const getMessages = () => {
-// const messagesRef = firebase.database().ref();
-// messagesRef.on('value', (snapshot) => {
-//     const data = snapshot.val();
-//     console.log(data);
-// });
-
-submitPost();
-// getMessages();
+// submitPost();
+getPosts();
